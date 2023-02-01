@@ -69,7 +69,7 @@ export default function Month ({ fullMonth, onEventAddClick, addedEvent}) {
       setCurrentEvents(thisMonthEvents);
     });
     
-  }, [fullMonth, Utils]);
+  }, [fullMonth]);
   
   useEffect(() => {
     addedEvent && setCurrentEvents(c=> [...c, addedEvent])
