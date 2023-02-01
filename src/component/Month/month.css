@@ -1,0 +1,23 @@
+.Month__week-days .Month__week-day {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+
+.Month .Month__week-days,
+.Month .Month__content,
+.Month .Month__week {
+  display: flex;
+}
+
+.Month .Month__content { flex-direction: column; }
+.Month .Month__week { flex-direction: row; width: 100%; height: 120px;}
+
+.Month__day-wrapper, .Month__week-day { flex-grow: 1; }
+.Month__day-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

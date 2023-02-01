@@ -1,0 +1,63 @@
+.Day {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Day__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Day__header .Day__add-event-button {
+  font-size: 1rem;
+  background-color: #dae5d5;
+  width: 25px;
+  padding: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Day__number {
+  font-size: 0.7rem;
+  color: #999999;
+}
+
+.Day--today .Day__number {
+  color: green;
+}
+
+.Day__content {
+  font-size: 0.7rem;
+  overflow: auto;
+  margin: 0.2rem 0;
+}
+
+.Day__content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Day__content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.Day__content::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.Day__content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes highligth {
+  from {border-color: #4f7c39; background-color: #f5fff0}
+  to {border-color: #eeeeee; background-color: white}
+}
+
+.Day.Day--recently-added {
+  -webkit-animation-name: highligth;
+  -webkit-animation-duration: 2s;
+  animation-name: highligth;
+  animation-duration: 2s;
+}

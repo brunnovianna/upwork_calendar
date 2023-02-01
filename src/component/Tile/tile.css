@@ -1,0 +1,7 @@
+.Tile {
+  position: relative;
+  padding: 0.3rem;
+  border: 1px solid #eeeeee;
+  flex: 1;
+  border-collapse: collapse;
+}

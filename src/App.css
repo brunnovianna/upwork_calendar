@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+ul, li {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Input__wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Input__wrapper label {
+  position: absolute;
+  bottom: -99999px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input__wrapper > * + * {
+  margin-left: 15px;
+}
+
+.Input__wrapper .Input {
+  border: 1px solid #aaaaaa;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.FormButton {
+  background-color: #dae5d5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+
+.FormButton:hover {
+  padding: 0.6rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 12px;
+  box-shadow: -0 0 15px -50px #999999;
+}
+
+.Input:focus-visible {
+  outline: #dae5d5 solid 1px;
 }

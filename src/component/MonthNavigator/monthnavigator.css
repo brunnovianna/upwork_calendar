@@ -1,0 +1,46 @@
+.MonthNavigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MonthNavigator > * {
+  gap: 1;
+}
+.MonthNavigator > * button {
+  width: 5rem;
+  padding: 1rem;
+  margin: 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.MonthNavigator > *:not(.MonthNavigator__arrow) button {
+  background-color: #f5fff0;
+  font-size: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px;
+}
+
+
+.MonthNavigator > *.MonthNavigator__arrow button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4d8535;
+}
+
+.MonthNavigator > * button:hover {
+
+}
+.MonthNavigator__month, .MonthNavigator__prev {
+  margin-right: auto;
+}
+
+.MonthNavigator__prev button:before {
+  content: "<";
+}
+
+.MonthNavigator__next button:before {
+  content: ">";
+}
+
+

@@ -1,0 +1,7 @@
+.DateEvent__item { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 100%; 
+  height: 1.2em; 
+  white-space: nowrap;
+}
